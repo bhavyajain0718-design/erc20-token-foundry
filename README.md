@@ -1,66 +1,88 @@
-## Foundry
+# 🪙 ERC20 Token Protocol
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+> A secure, production-style ERC20 implementation built with Solidity + Foundry  
+> Designed to understand token mechanics, security risks, and real-world testing practices.
 
-Foundry consists of:
+---
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## 👋 About Me
 
-## Documentation
+Hi, I'm **Bhavya**  
+Blockchain & DeFi developer focused on **smart contract engineering and protocol security**.
 
-https://book.getfoundry.sh/
+I build protocols from scratch to deeply understand:
+- how they work  
+- how they break  
+- how to secure them  
 
-## Usage
+---
 
-### Build
+## 🚀 Project Goal
 
-```shell
-$ forge build
-```
+This project was built to master the fundamentals behind the ERC20 standard using battle-tested contracts from OpenZeppelin and production-grade testing with Foundry.
 
-### Test
+Instead of just "deploying a token", the focus was:
 
-```shell
-$ forge test
-```
+✅ Understanding ERC20 internals  
+✅ Studying allowance vulnerabilities  
+✅ Implementing safe mint/burn logic  
+✅ Writing fuzz & invariant tests  
+✅ Thinking like a smart contract auditor  
 
-### Format
+---
 
-```shell
-$ forge fmt
-```
+## ✨ Features
 
-### Gas Snapshots
+### Core
+- ERC20 compliant
+- Transfers / approvals / transferFrom
+- Minting
+- Burning
+- Custom decimals
 
-```shell
-$ forge snapshot
-```
+### Security
+- Access control (Ownable)
+- Safe allowance handling
+- Reentrancy-safe patterns
+- Edge case protection
 
-### Anvil
+### Testing
+- Unit tests
+- Fuzz testing
+- Invariant testing
+- Gas reporting
 
-```shell
-$ anvil
-```
+---
 
-### Deploy
+## 🧠 What I Learned
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+- ERC20 storage & state layout
+- Allowance attack vectors
+- Token accounting invariants
+- Gas optimization techniques
+- Writing property-based tests
+- Security-first smart contract design
 
-### Cast
+---
 
-```shell
-$ cast <subcommand>
-```
+## 🧱 Tech Stack
 
-### Help
+- Solidity
+- Foundry
+- OpenZeppelin
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+---
+
+## 📂 Structure
+
+src/        → token contracts  
+test/       → unit + fuzz + invariant tests  
+script/     → deployment scripts  
+
+---
+
+## ⚙️ Setup
+
+### Install dependencies
+```bash
+forge install
